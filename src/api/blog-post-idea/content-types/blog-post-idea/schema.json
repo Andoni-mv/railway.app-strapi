@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_post_ideas",
+  "info": {
+    "singularName": "blog-post-idea",
+    "pluralName": "blog-post-ideas",
+    "displayName": "blog-post-idea"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "idea": {
+      "type": "string"
+    },
+    "ideaStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Done"
+      ]
+    }
+  }
+}
