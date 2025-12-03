@@ -449,6 +449,7 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    headerImage: Schema.Attribute.String;
     lang: Schema.Attribute.Enumeration<['en', 'es']> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{

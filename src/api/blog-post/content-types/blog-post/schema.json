@@ -119,6 +119,9 @@
           "localized": true
         }
       }
+    },
+    "headerImage": {
+      "type": "string"
     }
   }
 }
