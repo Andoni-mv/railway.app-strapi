@@ -41,7 +41,7 @@
       }
     },
     "title": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "pluginOptions": {
         "i18n": {
@@ -50,7 +50,7 @@
       }
     },
     "metaDescription": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "pluginOptions": {
         "i18n": {
@@ -59,7 +59,7 @@
       }
     },
     "summary": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "pluginOptions": {
         "i18n": {
@@ -121,7 +121,7 @@
       }
     },
     "headerImage": {
-      "type": "string"
+      "type": "text"
     }
   }
 }
