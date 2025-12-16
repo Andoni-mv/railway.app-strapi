@@ -449,7 +449,7 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    headerImage: Schema.Attribute.Text;
+    headerImage: Schema.Attribute.String;
     lang: Schema.Attribute.Enumeration<['en', 'es']> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -470,6 +470,12 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    primary_keyword: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publicationStatus: Schema.Attribute.Enumeration<
       ['draft', 'published', 'scheduled']
     > &
@@ -481,6 +487,12 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
       }> &
       Schema.Attribute.DefaultTo<'draft'>;
     publishedAt: Schema.Attribute.DateTime;
+    secondary_keywords: Schema.Attribute.JSON &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     slug: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique &
@@ -496,7 +508,7 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    title: Schema.Attribute.Text &
+    title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
