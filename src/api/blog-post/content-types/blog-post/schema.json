@@ -138,6 +138,14 @@
           "localized": true
         }
       }
+    },
+    "categories": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }
